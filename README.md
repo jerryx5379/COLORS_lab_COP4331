@@ -1,43 +1,76 @@
-For the colors lab in COP4331
+### For the colors lab in COP4331
 
-Includes:
+### Includes:
 A log in page 
+
 A user dashboard page which allows adding and searching for colors
 
 Server endpoints (expected request and response json)
-Add_color:
+
+### Add_color:
+
 request:
+
 {
+
   color: string,
+
   userId: int,
+
 }
+
 response:
+
 {
+
   error: string
+
 }
 
-login:
+### login:
+
 request:
+
 {
+
   login: string,
+
   password: string,
-}
-response: 
-{
-  id: int,
-  firstName: string,
-  lastName: string,
-  error: string,
+
 }
 
-search color:
-request:
+response: 
+
 {
-  search: string,
-  userId: int,
-}
-response:
-{
-  results: string[],
+
+  id: int,
+
+  firstName: string,
+
+  lastName: string,
+
   error: string,
+
+}
+
+### search color:
+
+request:
+
+{
+
+  search: string,
+
+  userId: int,
+
+}
+
+response:
+
+{
+
+  results: string[],
+
+  error: string,
+
 }
